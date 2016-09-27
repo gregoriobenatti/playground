@@ -4,20 +4,14 @@
 
 using namespace std;
 
+#define pi 3.14159
+
 int main()
 {
-	const int MY_DEC = 3;
-    const float PI = 3.14159, FORMULA_DIVIDEND = 4.0, FORMULA_DIVISOR = 3.0;
-    float v;
-    int r;
-
-    cin >> r;
-
-    v = (FORMULA_DIVIDEND/FORMULA_DIVISOR) * PI * (r*r*r);
-
-    cout.setf(ios::fixed, ios::floatfield);
-    cout.precision(MY_DEC);
-    cout << "VOLUME = " << v << endl;
+    float r;
+    
+    scanf("%f", &r);
+    printf("VOLUME = %.3f\n", 4.0 / 3.0 * pi * (r * r * r));
     
     return 0;
 }
